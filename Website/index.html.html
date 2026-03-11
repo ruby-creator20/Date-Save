@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Reuben &amp; Monja Wedding&lt;/title&gt;
+    &lt;style&gt;
+        body { margin:0; font-family:Georgia, serif; background:#faf7f2; color:#3e2f25; scroll-behavior:smooth; }
+        nav { position:fixed; top:0; width:100%; background:#5c4033; padding:10px; text-align:center; z-index:10; }
+        nav a { color:white; margin:15px; text-decoration:none; font-weight:bold; }
+        .hero { height:100vh; background:url(&quot;hero.jpg&quot;) center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; color:white; }
+        .hero-text { background:rgba(0,0,0,0.4); padding:40px; border-radius:10px; }
+        .hero h1 { font-size:52px; margin:0; }
+        .countdown { font-size:26px; margin-top:15px; }
+        section { max-width:900px; margin:auto; padding:80px 20px; text-align:center; }
+        h2 { color:#5c4033; }
+        .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px; }
+        .gallery img { width:100%; border-radius:8px; transition:0.3s; }
+        .gallery img:hover { transform:scale(1.05); }
+        button { background:#5c4033; color:white; border:none; padding:12px 20px; border-radius:5px; cursor:pointer; }
+        input, textarea { width:100%; padding:12px; margin:10px 0; border-radius:5px; border:1px solid #ccc; }
+        .message-wall { background:#f0e6dc; padding:30px; border-radius:10px; }
+        footer { background:#5c4033; color:white; padding:30px; margin-top:40px; }
+        
+        /* Fixed Invitation Styles */
+        #invitation { position:fixed; top:0; left:0; width:100%; height:100%; background:#faf7f2; display:flex; align-items:center; justify-content:center; z-index:9999; }
+        .envelope { background:#fff; padding:60px; border-radius:10px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.2); animation:float 3s infinite alternate; }
+        @keyframes float { from{transform:translateY(-5px)} to{transform:translateY(10px)} }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;invitation&quot;&gt;
+    &lt;div class=&quot;envelope&quot;&gt;
+        &lt;h2&gt;Reuben &amp; Monja&lt;/h2&gt;
+        &lt;p&gt;You are invited to our wedding&lt;/p&gt;
+        &lt;button onclick=&quot;openInvite()&quot;&gt;Open Invitation&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;nav&gt;
+    &lt;a href=&quot;#details&quot;&gt;Details&lt;/a&gt;
+    &lt;a href=&quot;#gallery&quot;&gt;Gallery&lt;/a&gt;
+    &lt;a href=&quot;#rsvp&quot;&gt;RSVP&lt;/a&gt;
+    &lt;a href=&quot;#messages&quot;&gt;Messages&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;div class=&quot;hero&quot;&gt;
+    &lt;div class=&quot;hero-text&quot;&gt;
+        &lt;h1&gt;Reuben &amp; Monja&lt;/h1&gt;
+        &lt;p&gt;We're Getting Married&lt;/p&gt;
+        &lt;p&gt;27 November 2026&lt;/p&gt;
+        &lt;div class=&quot;countdown&quot; id=&quot;countdown&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;section id=&quot;details&quot;&gt;
+    &lt;h2&gt;Wedding Details&lt;/h2&gt;
+    &lt;p&gt;📅 27 November 2026&lt;br&gt;&lt;br&gt;📍 Rustic Field Lodge and Venue&lt;/p&gt;
+    &lt;br&gt;
+    &lt;a href=&quot;https://maps.google.com&quot; target=&quot;_blank&quot;&gt;&lt;button&gt;View Map&lt;/button&gt;&lt;/a&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;gallery&quot;&gt;
+    &lt;h2&gt;Our Moments&lt;/h2&gt;
+    &lt;div class=&quot;gallery&quot;&gt;
+        &lt;img src=&quot;hero.jpg&quot;&gt;
+        &lt;img src=&quot;photo2.jpg&quot;&gt;
+        &lt;img src=&quot;photo3.jpg&quot;&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;rsvp&quot;&gt;
+    &lt;h2&gt;RSVP&lt;/h2&gt;
+    &lt;form action=&quot;mailto:your-email@example.com&quot; method=&quot;post&quot; enctype=&quot;text/plain&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;Your Name&quot; required&gt;
+        &lt;input type=&quot;text&quot; name=&quot;attending&quot; placeholder=&quot;Will you attend? Yes / No&quot; required&gt;
+        &lt;input type=&quot;number&quot; name=&quot;guests&quot; placeholder=&quot;Number of guests&quot; required&gt;
+        &lt;textarea name=&quot;message&quot; placeholder=&quot;Message for us&quot;&gt;&lt;/textarea&gt;
+        &lt;button type=&quot;submit&quot;&gt;Send RSVP&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;messages&quot;&gt;
+    &lt;h2&gt;Leave Us a Message&lt;/h2&gt;
+    &lt;div class=&quot;message-wall&quot;&gt;
+        &lt;p&gt;Guests can leave a message for the couple ❤️&lt;/p&gt;
+        &lt;textarea placeholder=&quot;Write your message here&quot;&gt;&lt;/textarea&gt;
+        &lt;button&gt;Post Message&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;footer&gt;We can't wait to celebrate with you ❤️&lt;/footer&gt;
+
+&lt;script&gt;
+    function openInvite() {
+        document.getElementById(&quot;invitation&quot;).style.display = &quot;none&quot;;
+    }
+
+    var countDownDate = new Date(&quot;Nov 27, 2026 00:00:00&quot;).getTime();
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById(&quot;countdown&quot;).innerHTML = days + &quot;d &quot; + hours + &quot;h &quot; + minutes + &quot;m &quot; + seconds + &quot;s &quot;;
+        
+        if (distance &lt; 0) {
+            clearInterval(x);
+            document.getElementById(&quot;countdown&quot;).innerHTML = &quot;JUST MARRIED!&quot;;
+        }
+    }, 1000);
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
